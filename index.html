@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Rendu Monnaie</title>
+</head>
+<body>
+    <div class="bloc_page">
+        <div id="cote_gauche">
+            <div class="paniers">
+                <div class="panierNumber"> 
+                    <img class="panier" src="images/panier.png" alt="Panier1" onclick="montant(event)" value="1">
+                    <p class="number">1</p>
+                </div>
+                <div class="panierNumber"> 
+                    <img class="panier" src="images/panier.png" alt="Panier2" onclick="montant(event)" value="2">
+                    <p class="number">2</p>
+                </div>
+                <div class="panierNumber"> 
+                    <img class="panier" src="images/panier.png" alt="Panier3" onclick="montant(event)" value="3">
+                    <p class="number">3</p>
+                </div>
+            </div>
+            
+        </div>
+        <header>
+            <div class="titre_appli">
+                <h1 id="titre">Rendu Monnaie</h1>
+            </div>
+        </header>
+        <div class="exercice">
+            <div class="enonce">
+                <p id="sommes"></p>
+            </div>
+            <div id="boite"></div>
+            <button id="valider" type="button" onclick="resultat(event)">Valider</button>
+        </div>
+        
+        <div class="cote_droit">
+            <div class="separateur"></div>
+            <div id="caisson">
+                <div class="pieces">
+                    <img class="piece" src="images/piece1cts.png" alt="pièce de 1 centime" onclick="clique(event)" value="1">
+                    <img class="piece" src="images/piece2cts.png" alt="pièce de 2 centimes" onclick="clique(event)" value="2">
+                    <img class="piece" src="images/piece5cts.png" alt="pièce de 5 centimes" onclick="clique(event)" value="5">
+                    <img class="piece" src="images/piece10cts.png" alt="pièce de 10 centimes" onclick="clique(event)" value="10">
+                    <img class="piece" src="images/piece20cts.png" alt="pièce de 20 centimes" onclick="clique(event)" value="20">
+                    <img class="piece" src="images/piece50cts.png" alt="pièce de 50 centimes" onclick="clique(event)" value="50">
+                    <img class="piece" src="images/piece1euros.png" alt="pièce de 1€" onclick="clique(event)" value="100">
+                    <img class="piece" src="images/piece2euros.png" alt="pièce de 1€" onclick="clique(event)" value="200">
+                </div>
+                <div class="billets">
+                    <img class="billet" src="images/billet5.png" alt="Billet de 5€" onclick="clique(event)" value="500">
+                    <img class="billet" src="images/billet10.png" alt="Billet de 10€" onclick="clique(event)" value="1000">
+                    <img class="billet" src="images/billet20.png" alt="Billet de 20€" onclick="clique(event)" value="2000">
+                    <img class="billet" src="images/billet50.png" alt="Billet de 50€" onclick="clique(event)" value="5000">
+                    <img class="billet" src="images/billet100.png" alt="Billet de 100€" onclick="clique(event)" value="10000">
+                    <img class="billet" src="images/billet200.png" alt="Billet de 200€" onclick="clique(event)" value="20000">
+                    <img class="billet" src="images/billet500.png" alt="Billet de 500€" onclick="clique(event)" value="50000">
+                </div>
+            
+            </div>
+        </div>
+        <p id="reste"></p>
+        <p id="donne"></p>
+       
+        <script src="scripts/main.js"></script>
+    </div>
+      
+</body>
+</html>
